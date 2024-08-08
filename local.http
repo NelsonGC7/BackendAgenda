@@ -1,0 +1,9 @@
+### create post 
+POST http://localhost:3000/persons
+Content-Type: application/json
+
+
+{
+    "name": "juan",
+    "number": "54545454"
+}
