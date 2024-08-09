@@ -1,9 +1,16 @@
 ### create post 
 POST http://localhost:3000/persons
 Content-Type: application/json
-
-
 {
-    "name": "juan",
+    "name": "mario",
     "number": "54545454"
 }
+
+### pedir todas las peliculas
+GET http://localhost:3000/persons
+
+### pedir por id
+GET http://localhost:3000/persons/5.879661866069361
+
+### delete por id
+DELETE http://localhost:3000/persons/5.879661866069361
