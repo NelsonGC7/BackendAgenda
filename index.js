@@ -1,7 +1,6 @@
 
 const express = require('express')
-
-
+const cors = require('node:cors')
 const app = express()
 const personas = [
     { 
@@ -26,6 +25,7 @@ const personas = [
     }
 ];
 app.use(express.json())
+app.use(cors())
 
 app.get('/persons',(req,res)=>{
     res.status(200).json(personas);
